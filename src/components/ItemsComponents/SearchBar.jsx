@@ -8,7 +8,7 @@ const SearchBar = () => {
   return (
     <form className={styles.searchBar}>
       <label htmlFor="searchInput" className="visually-hidden">
-        Search here
+        
       </label>
       <input
         type="search"

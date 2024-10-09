@@ -4,7 +4,7 @@
 .productList {
   display: flex;
   padding: 10px 80px 3px 34px;
-  background-color: #fff;
+  background-color: #d9d9d9;
 }
 
 @media (max-width: 991px) {
