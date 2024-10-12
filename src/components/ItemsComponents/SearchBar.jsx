@@ -6,20 +6,21 @@ import styles from "./SearchBar.module.css";
 
 const SearchBar = () => {
   return (
-    <form className={styles.searchBar}>
-      <label htmlFor="searchInput" className="visually-hidden">
-        Search here
+    <form className={styles.searchForm}>
+      <label htmlFor="searchInput" className={styles.visuallyHidden}>
+        Search items
       </label>
       <input
         type="search"
         id="searchInput"
-        placeholder="Search here"
         className={styles.searchInput}
+        placeholder="Search here"
+        aria-label="Search items"
       />
-      <button type="submit" className={styles.searchButton} aria-label="Search">
+      <button type="submit" className={styles.searchButton}>
         <img
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/dc278ee9417268e666bdd5c83a565a3a9025f4edddb59cf14a62d0e4ac199f9d?placeholderIfAbsent=true&apiKey=63cef383af9641cc969e43f7e6acc6c2"
-          alt=""
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/87bd678cce24e6ded1096995259ebe7bed211ed013654e62148906c6a7ae8b22?placeholderIfAbsent=true&apiKey=63cef383af9641cc969e43f7e6acc6c2"
+          alt="Search"
           className={styles.searchIcon}
         />
       </button>

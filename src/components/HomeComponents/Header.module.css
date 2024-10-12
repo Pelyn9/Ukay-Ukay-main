@@ -19,7 +19,11 @@
 }
 
 .navigation {
-  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  color: #000;
+  font-size: 24px;
 }
 
 .navList {
@@ -50,6 +54,13 @@
 .iconContainer {
   display: flex;
   gap: 20px;
+}
+
+.iconButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
 }
 
 .icon {
