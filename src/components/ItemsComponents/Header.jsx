@@ -3,9 +3,9 @@
  */
 import React from "react";
 import styles from "./Header.module.css";
-import Logo from "../ItemsComponents/Logo";
-import Navigation from "../ItemsComponents/Navigation";
-import SearchBar from "../ItemsComponents/SearchBar";
+import Logo from "../Logo/Logo";
+import Navigation from "../Navigation/Navigation";
+import SearchBar from "../SearchBar/SearchBar";
 
 const Header = () => {
   return (

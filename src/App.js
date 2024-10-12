@@ -4,7 +4,8 @@ import LoginPage from './components/LoginPage/LoginPage';
 import SignUpPage from './components/SignUpPage/SignUpPage';
 import ResetPasswordForm from './components/ResetPassword/ResetPasswordForm';
 import LoadingComponent from './components/LoadingComponent/LoadingComponent';
-import Home from './components/HomeComponents/Home'; // Correct import
+import Home from './components/HomeComponents/Home';
+import Items from './components/Items/Items'; // Import Items component
 import './App.css';
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/forgot-password" element={<ResetPasswordForm />} />
           <Route path="/loading" element={<LoadingComponent isFadingOut={true} />} />
-          <Route path="/home" element={<Home />} /> {/* Use the correct component */}
+          <Route path="/home" element={<Home />} />
+          <Route path="/items" element={<Items />} /> {/* Use the correct component */}
         </Routes>
       )}
     </Router>

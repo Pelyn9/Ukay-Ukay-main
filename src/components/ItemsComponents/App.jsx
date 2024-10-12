@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "./Header";
-import ProductList from "./ProductList";  // Ensure this is correctly imported
+import Header from "./Header/Header";
+import ProductList from "./ProductList/ProductList";
 import Footer from "./Footer";
 import styles from "./App.module.css";
 
@@ -8,7 +8,7 @@ const Items = () => {
   return (
     <div className={styles.app}>
       <Header />
-      <ProductList />  {/* Your product list */}
+      <ProductList />
       <Footer />
     </div>
   );
