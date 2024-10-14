@@ -1,18 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function NavItem({ label, active }) {
+function NavItem({ label, href, active }) {
   return (
-    <>
-      <div className={`nav-item ${active ? 'active' : ''}`}>
-        <span>{label}</span>
-        {active && <div className="active-indicator" />}
-      </div>
+    <Link to={href} className={`nav-item ${active ? 'active' : ''}`}>
+      <span>{label}</span>
+      {active && <div className="active-indicator" />}
       <style jsx>{`
         .nav-item {
           display: flex;
           flex-direction: column;
           align-items: center;
           cursor: pointer;
+          text-decoration: none; /* Prevent underline on links */
+          color: inherit; /* Inherit color from parent */
         }
         .nav-item span {
           text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -29,7 +30,7 @@ function NavItem({ label, active }) {
           }
         }
       `}</style>
-    </>
+    </Link>
   );
 }
 

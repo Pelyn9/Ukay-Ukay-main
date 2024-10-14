@@ -1,3 +1,4 @@
+// src/App.js
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import LoginPage from './components/LoginPage/LoginPage';
@@ -6,6 +7,7 @@ import ResetPasswordForm from './components/ResetPassword/ResetPasswordForm';
 import LoadingComponent from './components/LoadingComponent/LoadingComponent';
 import Home from './components/HomeComponents/Home';
 import Items from './components/ItemsComponents/Items';
+import Favorites from './components/Favorites/Favorites'; // Updated import path
 import './App.css';
 
 function App() {
@@ -25,13 +27,14 @@ function App() {
         <LoadingComponent isFadingOut={false} />
       ) : (
         <Routes>
-          <Route path="/" element={<Navigate to="/login" />} /> {/* Redirect to LoginPage */}
+          <Route path="/" element={<Navigate to="/login" />} />
           <Route path="/sign-up" element={<SignUpPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/forgot-password" element={<ResetPasswordForm />} />
           <Route path="/loading" element={<LoadingComponent isFadingOut={true} />} />
           <Route path="/home" element={<Home />} />
           <Route path="/items" element={<Items />} />
+          <Route path="/favorites" element={<Favorites />} /> {/* Add the Favorites route */}
         </Routes>
       )}
     </Router>

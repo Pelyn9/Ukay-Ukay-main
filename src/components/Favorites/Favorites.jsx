@@ -1,14 +1,13 @@
+// src/components/Favorites/Favorites.jsx
 import React from "react";
 import Header from "./Header";
 import SearchBar from "./SearchBar";
 
 function Favorites() {
   return (
-    <>
-      <main className="favorites-page">
-        <Header />
-        <SearchBar />
-      </main>
+    <main className="favorites-page">
+      <Header />
+      <SearchBar />
       <style jsx>{`
         .favorites-page {
           background-color: #d9d9d9;
@@ -26,7 +25,7 @@ function Favorites() {
           }
         }
       `}</style>
-    </>
+    </main>
   );
 }
 
