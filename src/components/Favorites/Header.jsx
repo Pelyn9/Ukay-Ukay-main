@@ -48,16 +48,12 @@ function Header() {
           display: flex;
           width: 100%;
           align-items: center;
-          gap: 20px;
-          font-size: 24px;
-          padding: 22px 52px 0;
+          padding: 22px 37px;
         }
         @media (max-width: 991px) {
           .main-header {
-            max-width: 100%;
-            padding: 20px;
+            padding: 22px 20px;
             flex-wrap: wrap;
-            justify-content: space-between;
           }
         }
         .logo {
@@ -69,20 +65,18 @@ function Header() {
         .main-nav {
           display: flex;
           align-items: center;
-          gap: 72px;
-          margin: auto 0;
+          gap: 31px;
         }
         @media (max-width: 991px) {
-          .main-nav {
-            max-width: 100%;
+          .header {
+            padding: 22px 20px;
             flex-wrap: wrap;
-            gap: 40px;
           }
         }
         .user-actions {
           display: flex;
           align-items: center;
-          gap: 20px;
+          gap: 40px;
         }
         .notification-icon {
           aspect-ratio: 1.07;
