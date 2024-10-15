@@ -7,7 +7,8 @@ import ResetPasswordForm from './components/ResetPassword/ResetPasswordForm';
 import LoadingComponent from './components/LoadingComponent/LoadingComponent';
 import Home from './components/HomeComponents/Home';
 import Items from './components/ItemsComponents/Items';
-import Favorites from './components/Favorites/Favorites'; // Updated import path
+import Favorites from './components/Favorites/Favorites';
+import Cart from './components/CartComponents/Cart'; // Updated import path
 import './App.css';
 
 function App() {
@@ -34,7 +35,8 @@ function App() {
           <Route path="/loading" element={<LoadingComponent isFadingOut={true} />} />
           <Route path="/home" element={<Home />} />
           <Route path="/items" element={<Items />} />
-          <Route path="/favorites" element={<Favorites />} /> {/* Add the Favorites route */}
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       )}
     </Router>
