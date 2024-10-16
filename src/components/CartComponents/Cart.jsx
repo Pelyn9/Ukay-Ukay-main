@@ -4,7 +4,6 @@
 import React from "react";
 import styles from "./Cart.module.css";
 import Header from "./Header";
-import SearchBar from "./SearchBar";
 import EmptyCart from "./EmptyCart";
 import Footer from "./Footer";
 
@@ -12,7 +11,6 @@ function Cart() {
   return (
     <main className={styles.cart}>
       <Header />
-      <SearchBar />
       <section className={styles.cartContent}>
         <div className={styles.cartLayout}>
           <div className={styles.imageColumn}>

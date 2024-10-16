@@ -3,7 +3,6 @@
  */
 import React from "react";
 import Header from "./Header";
-import SearchBar from "./SearchBar";
 import FeaturedProduct from "./FeaturedProduct";
 import ProductGrid from "./ProductGrid";
 import Footer from "./Footer";
@@ -72,7 +71,6 @@ const UkayUkayOnlineShop = () => {
     <div className={styles.ukayUkayOnlineShop}>
       <Header />
       <main className={styles.mainContent}>
-        <SearchBar />
         <section className={styles.limitedSection}>
           <h2 className={styles.sectionTitle}>Limited Ukay-Ukay</h2>
           <FeaturedProduct {...featuredProduct} />
