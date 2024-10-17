@@ -15,6 +15,9 @@ const Navigation = () => {
       </a>
       <a href="/favorites" className={styles.navLink}>
         Favorites
+        {location.pathname === "/favorites" && (
+            <div className={styles.underline} /> // Show underline under Cart icon when active
+          )}
       </a>
 
       {/* Cart Button with underline */}
