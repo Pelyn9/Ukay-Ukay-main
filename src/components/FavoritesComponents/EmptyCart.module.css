@@ -38,7 +38,7 @@
 }
 
 .continueButton:hover {
-  background-color: #3b3b3b; /* Darker shade on hover */
+  background-color: #6b6b6b; /* Change to a lighter shade on hover */
 }
 
 @media (max-width: 991px) {
